@@ -2,7 +2,7 @@ import json
 from pathlib import Path
 
 
-DEFAULT_PATH = "../config.json"
+DEFAULT_PATH = "../config/config.json"
 
 
 class Settings:
