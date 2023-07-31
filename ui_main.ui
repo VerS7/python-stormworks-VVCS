@@ -1,0 +1,514 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>VVCS</class>
+ <widget class="QMainWindow" name="VVCS">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>621</width>
+    <height>520</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>1920</width>
+    <height>1080</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string notr="true">Stormworks VVCS</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(47, 54, 52);</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QWidget" name="gridLayoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>611</width>
+      <height>502</height>
+     </rect>
+    </property>
+    <layout class="QGridLayout" name="mainGrid">
+     <property name="sizeConstraint">
+      <enum>QLayout::SetFixedSize</enum>
+     </property>
+     <item row="0" column="2">
+      <layout class="QVBoxLayout" name="contextLayout">
+       <item>
+        <widget class="QWidget" name="contextWidget" native="true">
+         <property name="minimumSize">
+          <size>
+           <width>250</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: #1e2422;
+border-radius: 7px;</string>
+         </property>
+         <widget class="QTextEdit" name="CommentLine">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>300</y>
+            <width>231</width>
+            <height>151</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Arial</family>
+            <pointsize>10</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="toolTip">
+           <string/>
+          </property>
+          <property name="layoutDirection">
+           <enum>Qt::LeftToRight</enum>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color: rgb(255, 255, 255);
+background-color: #323a38;</string>
+          </property>
+          <property name="verticalScrollBarPolicy">
+           <enum>Qt::ScrollBarAlwaysOff</enum>
+          </property>
+          <property name="horizontalScrollBarPolicy">
+           <enum>Qt::ScrollBarAlwaysOff</enum>
+          </property>
+          <property name="acceptRichText">
+           <bool>false</bool>
+          </property>
+          <property name="placeholderText">
+           <string>Type comment here...</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="imageLabel">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>60</y>
+            <width>231</width>
+            <height>231</height>
+           </rect>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>231</width>
+            <height>231</height>
+           </size>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">background-color: #101010;</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+         <widget class="QLabel" name="nameLabel">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>10</y>
+            <width>231</width>
+            <height>41</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Arial</family>
+            <pointsize>10</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+            <underline>false</underline>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">background-color: #2a2927;
+color: #ececec;
+border-radius: 20px;
+</string>
+          </property>
+          <property name="text">
+           <string>Vehicle name</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="CommitBtn">
+          <property name="geometry">
+           <rect>
+            <x>100</x>
+            <y>460</y>
+            <width>141</width>
+            <height>30</height>
+           </rect>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>30</height>
+           </size>
+          </property>
+          <property name="font">
+           <font>
+            <family>Arial</family>
+            <pointsize>10</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QPushButton {
+	color: rgb(255, 255, 255); 
+	background-color: #4091b3;
+	border-radius: 15px;
+}
+QPushButton::hover {
+	background-color: #449abe;
+}
+QPushButton:pressed {
+	background-color: #397e9b;
+}</string>
+          </property>
+          <property name="text">
+           <string>Commit changes</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="updateLabel">
+          <property name="geometry">
+           <rect>
+            <x>20</x>
+            <y>260</y>
+            <width>171</width>
+            <height>21</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Arial</family>
+            <pointsize>10</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+            <underline>false</underline>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">background-color: #101010;
+color: #ececec;
+border-radius: 7px;
+</string>
+          </property>
+          <property name="text">
+           <string>Last update: 00-00-00 00:00</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="refreshBtn">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>460</y>
+            <width>31</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">
+QPushButton {
+	border-radius: 15px;
+	image: url(:/icons/refresh.ico);
+	background-color: #1e2422;
+}
+QPushButton::hover {
+	background-color: #282e2d;
+}
+QPushButton:pressed {
+	background-color: #3e4342;
+}</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="icon">
+           <iconset theme="url()">
+            <normaloff>.</normaloff>.</iconset>
+          </property>
+         </widget>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item row="0" column="0" alignment="Qt::AlignLeft">
+      <widget class="QWidget" name="gameWgt" native="true">
+       <property name="minimumSize">
+        <size>
+         <width>170</width>
+         <height>500</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(29, 35, 34);
+border-radius: 10px;</string>
+       </property>
+       <widget class="QListWidget" name="gameVehiclesList">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>40</y>
+          <width>151</width>
+          <height>411</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QListWidget {
+	outline: 0;
+}
+
+QListWidget::item {
+	gridline-color: black;
+}
+
+QListWidget::item:hover {
+	background: #293130;
+}
+
+QListWidget::item:selected {
+	background: #363d3c;
+	outline: 2px solid red;
+	selection-color: #d86e3d;
+
+}
+</string>
+        </property>
+        <property name="verticalScrollBarPolicy">
+         <enum>Qt::ScrollBarAlwaysOff</enum>
+        </property>
+        <property name="horizontalScrollBarPolicy">
+         <enum>Qt::ScrollBarAlwaysOff</enum>
+        </property>
+       </widget>
+       <widget class="QLabel" name="localLabel">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>0</y>
+          <width>151</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Arial</family>
+          <pointsize>10</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: #d86e3d;
+border-bottom: 1px solid;
+border-radius: 0px;
+border-bottom-color: #494e4d;</string>
+        </property>
+        <property name="text">
+         <string>Local objects</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="syncServBtn">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>460</y>
+          <width>150</width>
+          <height>30</height>
+         </rect>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>150</width>
+          <height>30</height>
+         </size>
+        </property>
+        <property name="font">
+         <font>
+          <family>Arial</family>
+          <pointsize>10</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+	color: rgb(255, 255, 255); 
+	background-color: #4091b3;
+	border-radius: 15px;
+}
+QPushButton::hover {
+	background-color: #449abe;
+}
+QPushButton:pressed {
+	background-color: #397e9b;
+}</string>
+        </property>
+        <property name="text">
+         <string>Sync from remote</string>
+        </property>
+       </widget>
+      </widget>
+     </item>
+     <item row="0" column="1">
+      <widget class="QWidget" name="serverWgt" native="true">
+       <property name="minimumSize">
+        <size>
+         <width>170</width>
+         <height>500</height>
+        </size>
+       </property>
+       <property name="layoutDirection">
+        <enum>Qt::LeftToRight</enum>
+       </property>
+       <property name="autoFillBackground">
+        <bool>false</bool>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(29, 35, 34);
+border-radius: 10px;</string>
+       </property>
+       <widget class="QListWidget" name="serverVehiclesList">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>40</y>
+          <width>151</width>
+          <height>411</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QListWidget {
+	outline: 0;
+}
+
+QListWidget::item {
+	gridline-color: black;
+}
+
+QListWidget::item:hover {
+	background: #293130;
+}
+
+QListWidget::item:selected {
+	background: #363d3c;
+	outline: 2px solid red;
+	selection-color: #d86e3d;
+
+}
+</string>
+        </property>
+        <property name="verticalScrollBarPolicy">
+         <enum>Qt::ScrollBarAlwaysOff</enum>
+        </property>
+        <property name="horizontalScrollBarPolicy">
+         <enum>Qt::ScrollBarAlwaysOff</enum>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_2">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>0</y>
+          <width>151</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Arial</family>
+          <pointsize>10</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: #d86e3d;
+border-bottom: 1px solid;
+border-radius: 0px;
+border-bottom-color: #494e4d;</string>
+        </property>
+        <property name="text">
+         <string>Remote objects</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="syncGameBtn">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>460</y>
+          <width>150</width>
+          <height>30</height>
+         </rect>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>150</width>
+          <height>30</height>
+         </size>
+        </property>
+        <property name="font">
+         <font>
+          <family>Arial</family>
+          <pointsize>10</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+	color: rgb(255, 255, 255); 
+	background-color: #4091b3;
+	border-radius: 15px;
+}
+QPushButton::hover {
+	background-color: #449abe;
+}
+QPushButton:pressed {
+	background-color: #397e9b;
+}</string>
+        </property>
+        <property name="text">
+         <string>Sync to remote</string>
+        </property>
+       </widget>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+ </widget>
+ <resources>
+  <include location="res/res.qrc"/>
+ </resources>
+ <connections/>
+</ui>
