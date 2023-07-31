@@ -1,0 +1,7 @@
+<RCC>
+  <qresource prefix="icons">
+    <file>microprocessor.ico</file>
+    <file>vehicle.ico</file>
+    <file>refresh.ico</file>
+  </qresource>
+</RCC>
