@@ -1,0 +1,9 @@
+{
+  "Stormworks": {
+    "data_path": "Here is your game data path like .../Stormworks/data"
+  },
+  "Git": {
+    "PAT": "Here is your Private Access Token from github or something like that",
+    "url": "Here is your repository url like https://<TOKEN>:x-oauth-basic@github.com/... Note that <TOKEN> will be replaced with your PAT"
+  }
+}
