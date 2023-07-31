@@ -22,7 +22,10 @@ class GitWorks:
         return local_repo
 
     def local_add(self, filename, comment=None):
-        self.__localrepo.git.add(filename)
+        try:
+            self.__localrepo.git.add(filename)
+        except Exception as e:
+            print(e)
         self.__localrepo.git.commit("-m", comment if comment is not None else "Small changes")
 
     def local_remote_push(self):
