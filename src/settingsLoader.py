@@ -6,6 +6,7 @@ DEFAULT_PATH = "../config/config.json"
 
 
 class Settings:
+    """Settings loader from config.json file"""
     def __init__(self, data_path=None, pat=None, url=None):
         self.__json = self.__load_json(DEFAULT_PATH)
 
@@ -26,11 +27,19 @@ class Settings:
         raise Exception("Can't find .json file, is it exist?")
 
     def path_from_json(self):
-        return self.__json["Stormworks"]["data_path"]
+        try:
+            return self.__json["Stormworks"]["data_path"]
+        except Exception as e:
+            raise e
 
     def pat_from_json(self):
-        return self.__json["Git"]["PAT"]
+        try:
+            return self.__json["Git"]["PAT"]
+        except Exception as e:
+            raise e
 
     def url_from_json(self):
-        return self.__json["Git"]["url"]
-
+        try:
+            return self.__json["Git"]["url"]
+        except Exception as e:
+            raise e
