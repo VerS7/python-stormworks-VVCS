@@ -30,14 +30,15 @@ and **Private Access Token (PAT)** for it.
 
 ## Manual
 
-For manual use you need:
+For manual using you need:
 1. Clone this repository or **Code -> Download ZIP**
-2. Install **Python 3.8** or newer version
-3. Create your private repository (github recommended)
-4. Create your [Private Access Token (PAT)](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens) to your repository
-5. Fill **config/config.json** file with private repository link, PAT and Stormworks data path
-6. Install requirements **pip install -r requirements.txt**
-7. Start **main.py**
+2. Setup [**GIT**](https://git-scm.com/downloads)
+3. Install **Python 3.8** or newer version
+4. Create your private repository (github recommended)
+5. Create your [Private Access Token (PAT)](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens) to your repository
+6. Fill **config/config.json** file with private repository link, PAT and Stormworks data path
+7. Install requirements **pip install -r requirements.txt**
+8. Start **main.py**
 
 If everything is correct, you would see a program with your vehicle and microprocessor names from game and empty remote data.
 
@@ -51,11 +52,14 @@ Now you and your friends can share and download vehicles!
 
 ## Exe
 
+For using pre-build program you need:
+
 1. Download pre-build exe program
-2. Create your private repository (github recommended)
-3. Create your [Private Access Token (PAT)](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens) to your repository
-4. Fill **config/config.json** file with private repository link, PAT and Stormworks data path or take it from your friend
-5. Start **VVCS.exe**
+2. Setup [**GIT**](https://git-scm.com/downloads)
+3. Create your private repository (github recommended)
+4. Create your [Private Access Token (PAT)](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens) to your repository
+5. Fill **config/config.json** file with private repository link, PAT and Stormworks data path or take it from your friend
+6. Start **VVCS.exe**
 
 # FAQ
 
@@ -69,5 +73,5 @@ Be sure to correctly create **PAT** access. Check your private repository, it mu
 
 Be sure you and your friends start program after correctly filling **config.json**. Try to delete **local** directory and restart program.
 
-
+### If you catch any problem, write an issue
  
